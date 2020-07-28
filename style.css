@@ -1,0 +1,167 @@
+
+
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+    display:none;
+  }
+
+h1{
+    color: pink;
+    font-family:arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    background-color: #a1c9b8 ;
+    margin: 0;
+    scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+    -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
+    /* overflow-y: scroll; */
+    overflow: hidden;
+}
+
+
+h2{
+    color: white;
+    font-family:arial;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 100%;
+    margin-left: 0;
+}
+h3{
+    color: white;
+    font-family:arial;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 100%;
+    margin-left: 0;
+}
+
+#selected {
+    background: rgb(253, 205, 213);
+    color: white;
+    font-family:arial;
+    font-style: italic;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    max-height: 75vh;
+    margin-top:18px;
+    caption-side: bottom;
+}
+
+#imgt{
+    max-height: 100%;
+
+}
+
+#img1{
+    margin-top:0px;
+}
+
+.caption{
+    display: block;
+    margin-top: 10px;
+    color: white;
+    font-family:arial;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
+    
+
+}
+ ::-webkit-scrollbar {
+    display: none;
+} 
+.images{
+    /* display: inline-block; */
+    height: 100vh;
+    min-width: 30vh;
+    max-width: 60vw;
+    margin-top: 18px;
+    margin-right: 20px;
+    margin-bottom:18px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.description {
+    margin-top: 18px;
+    line-height: 100%;
+    font-family: Arial;
+    font-style:italic;
+    font-size: .9rem;
+    color: White;
+    min-width: 15vw;
+    max-width: 20vw;
+    padding-right:10px;
+    /* text-shadow: 2px 2px crimson */
+}
+
+.list {   
+    /* margin-top: 10px; */
+    /* vertical-align: top;
+    display: inline-block; */
+    line-height: 150%;
+    font-family: Arial;
+    font-style:italic;
+    /* font-size: 1rem; */
+    color: rgb(253, 205, 213);
+    min-width: 254px;
+    max-width:255px;
+    margin-right: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+ul li h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.navigation ul li a{
+    font-family: Arial;
+    font-style:italic;
+    color: rgb(253, 205, 213);
+    text-decoration: none;
+}
+
+
+
+.navigation ul li a:hover, .navigation ul li a:focus, .navigation ul li a:visited:hover{
+    color:white;}
+
+
+    .navigation ul li a:visited {
+        color:inherit;
+        }
+
+
+.navigation ul li.active a {
+    background: rgb(253, 205, 213);
+    color: white;
+    font-family:arial;
+    font-style: italic;
+    /* font-weight: bold; */
+}
+/* ul li a:hover, ul li a:focus {
+    color:white;
+   } */
