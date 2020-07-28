@@ -93,7 +93,7 @@ img{
     max-width: 60vw;
     margin-top: 18px;
     margin-right: 20px;
-    margin-bottom:18px;
+    padding-bottom: 18ps;
     overflow: scroll;
     scrollbar-width: none;
 }
