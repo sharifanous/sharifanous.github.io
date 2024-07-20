@@ -1,78 +1,80 @@
-
-
-
-  body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
-    display:none;
-  }
-
-h1{
-    color: pink;
-    font-family:arial;
-    font-weight: bold;
-    font-style: italic;
+    background: transparent;
+    /* Disable scrollbar Chrome/Safari/Webkit */
+    display: none;
 }
 
-body{
-    background-color: #a1c9b8 ;
+h1 {
+    color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+body {
+    background-color: white;
     margin: 0;
-    scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
-    -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
+    scrollbar-width: none;
+    /* Also needed to disable scrollbar Firefox */
+    -ms-overflow-style: none;
+    /* Disable scrollbar IE 10+ */
     /* overflow-y: scroll; */
     overflow: hidden;
 }
 
 
-h2{
-    color: white;
-    font-family:arial;
+h2 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 100%;
-    margin-left: 0;
-}
-h3{
-    color: white;
-    font-family:arial;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1rem;
+    /*font-style: italic*/
+    ;
+    font-size: 1.3rem;
     line-height: 100%;
     margin-left: 0;
 }
 
 #selected {
-    background: rgb(253, 205, 213);
-    color: white;
-    font-family:arial;
+    /*background: rgb(255, 0, 0);*/
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    font-weight: bold;
 }
 
-img{
+img {
     display: block;
     max-width: 100%;
-    max-height: 75vh;
-    margin-top:18px;
+    max-height: 92vh;
+    margin-top: 18px;
     caption-side: bottom;
 }
 
-#imgt{
-    max-height: 100%;
+/* img { */
+/* this is the old one */
+/* display: block;
+    max-width: 100%;
+    max-height: 75vh;
+    margin-top: 18px;
+    caption-side: bottom;
+} */
 
+#img1 {
+    margin-top: 0px;
 }
 
-#img1{
-    margin-top:0px;
+#imgcontact {
+    margin-top: 0px;
+    max-height: 50vh;
 }
 
-.caption{
+.caption {
     display: block;
     margin-top: 10px;
     color: white;
-    font-family:arial;
-    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-style: italic;*/
 }
 
 .container {
@@ -80,88 +82,145 @@ img{
     flex-direction: row;
     align-items: flex-start;
     overflow: hidden;
-    
+
 
 }
- ::-webkit-scrollbar {
+
+::-webkit-scrollbar {
     display: none;
-} 
-.images{
+}
+
+.images {
     /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
-    min-width: 30vh;
-    max-width: 60vw;
+    /*min-width: 30vh;*/
+    width: 80vw;
     margin-top: 18px;
     margin-right: 20px;
-    padding-bottom: 18ps;
     overflow: scroll;
     scrollbar-width: none;
+}
+
+.imageshome {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /*min-width: 30vh;*/
+    /* width: 60vw; */
+    margin-top: 18px;
+    margin-right: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.green {
+    color: green;
 }
 
 .description {
     margin-top: 18px;
     line-height: 100%;
-    font-family: Arial;
-    font-style:italic;
-    font-size: .9rem;
-    color: White;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-style: italic*/
+    ;
+    font-size: .8rem;
+    color: black;
     min-width: 15vw;
     max-width: 20vw;
-    padding-right:10px;
-    /* text-shadow: 2px 2px crimson */
+    padding-right: 10px;
+    /*text-shadow: 2px 2px crimson*/
 }
 
-.list {   
+.midtxt {
+    margin-top: 18px;
+    line-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-style: italic*/
+    ;
+    font-size: .8rem;
+    color: black;
+    min-width: 60vw;
+    padding-right: 20px;
+    /*text-shadow: 2px 2px crimson*/
+}
+
+
+.list {
     /* margin-top: 10px; */
     /* vertical-align: top;
     display: inline-block; */
-    line-height: 150%;
-    font-family: Arial;
-    font-style:italic;
+    line-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-style: italic;*/
     /* font-size: 1rem; */
-    color: rgb(253, 205, 213);
-    min-width: 254px;
-    max-width:255px;
+    color: black;
+    min-width: 175px;
+    max-width: 176px;
     margin-right: 20px;
+    margin-left: 10px;
     overflow: scroll;
     scrollbar-width: none;
     text-decoration: none;
 }
 
 ul {
-    padding-left: 18px;
+    padding-left: 10px;
 }
 
-ul li h2{
+ul li h2 {
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
-.navigation ul li a{
-    font-family: Arial;
-    font-style:italic;
-    color: rgb(253, 205, 213);
+.navigation ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .9rem;
+    /*font-style: italic;*/
+    color: black;
     text-decoration: none;
 }
 
+.subhd {
+    line-height: 75%;
+}
+
+.sml {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .7rem;
+}
+
+.big {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a:focus,
+.navigation ul li a:visited:hover {
+    color: green;
+}
 
 
-.navigation ul li a:hover, .navigation ul li a:focus, .navigation ul li a:visited:hover{
-    color:white;}
-
-
-    .navigation ul li a:visited {
-        color:inherit;
-        }
+.navigation ul li a:visited {
+    color: inherit;
+}
 
 
 .navigation ul li.active a {
-    background: rgb(253, 205, 213);
-    color: white;
-    font-family:arial;
+    /*background: rgb(255, 0, 0);*/
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
+
+
 /* ul li a:hover, ul li a:focus {
     color:white;
    } */
